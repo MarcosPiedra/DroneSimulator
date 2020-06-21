@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DroneSimulator.Configuration\DroneSimulator.Configuration.csproj" />
     <ProjectReference Include="..\DroneSimulator.Domain\DroneSimulator.Domain.csproj" />
   </ItemGroup>
 
