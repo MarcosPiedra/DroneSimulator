@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DroneSimulator.Console", "DroneSimulator\DroneSimulator.Console.csproj", "{3A223C8B-95C3-43A2-8CA7-8AF44C475E19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DroneSimulator.Domain", "DroneSimulator.Domain\DroneSimulator.Domain.csproj", "{6B71E8F1-4BE8-4057-AD2D-97031D6077FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneSimulator.Configuration", "DroneSimulatior.Configuration\DroneSimulator.Configuration.csproj", "{70D98DCC-D7EF-441D-BB7D-D049F27E462E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneSimulator.CSVDataAccess", "DroneSimulator.CSVDataAcces\DroneSimulator.CSVDataAccess.csproj", "{D47910C8-B885-444D-B961-89FE10B7818D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A223C8B-95C3-43A2-8CA7-8AF44C475E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A223C8B-95C3-43A2-8CA7-8AF44C475E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A223C8B-95C3-43A2-8CA7-8AF44C475E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A223C8B-95C3-43A2-8CA7-8AF44C475E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B71E8F1-4BE8-4057-AD2D-97031D6077FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B71E8F1-4BE8-4057-AD2D-97031D6077FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B71E8F1-4BE8-4057-AD2D-97031D6077FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B71E8F1-4BE8-4057-AD2D-97031D6077FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D98DCC-D7EF-441D-BB7D-D049F27E462E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D98DCC-D7EF-441D-BB7D-D049F27E462E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D98DCC-D7EF-441D-BB7D-D049F27E462E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D98DCC-D7EF-441D-BB7D-D049F27E462E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47910C8-B885-444D-B961-89FE10B7818D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47910C8-B885-444D-B961-89FE10B7818D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47910C8-B885-444D-B961-89FE10B7818D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47910C8-B885-444D-B961-89FE10B7818D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98895B7E-C171-46DC-B499-1FD6B11010DB}
+	EndGlobalSection
+EndGlobal
