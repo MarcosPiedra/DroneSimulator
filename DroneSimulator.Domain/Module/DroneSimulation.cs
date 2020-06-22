@@ -14,7 +14,8 @@ namespace DroneSimulator.Domain.Module
             builder.RegisterType<TubeService>().As<ITubeService>();
             builder.RegisterType<DispatcherService>().As<IDisparcherService>();
             builder.RegisterType<DispatcherJob>().As<IDispatcherJob>();
-            builder.RegisterType<TrafficReport>().As<ITrafficReport>();
+            builder.RegisterType<TrafficReport>().As<ITrafficReport>()
+                                                 .SingleInstance();
 
             builder.AddMediatR(typeof(DroneSimulation).Assembly);
         }

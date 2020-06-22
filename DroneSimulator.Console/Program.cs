@@ -28,13 +28,14 @@ namespace DroneSimulator.Console
 
             var dispatcherJobConfig = configuration.GetSection("DispatcherJob").Get<DispatcherJobConfig>();
             var droneConfig = configuration.GetSection("Drone").Get<DroneConfig>();
+            var reportConfig = configuration.GetSection("Report").Get<ReportConfig>();
 
-            var loggerFactory = LoggerFactory.Create(builder =>
+            var loggerFactory = LoggerFactory.Create(b =>
             {
-                builder.AddFilter("Microsoft", LogLevel.Warning)
+                b.AddFilter("Microsoft", LogLevel.Warning)
                        .AddFilter("System", LogLevel.Warning)
                        .AddFilter("LoggingConsoleApp.Program", LogLevel.Debug);
-                builder.AddConsole();
+                b.AddConsole();
             });
 
             var builder = new ContainerBuilder();
@@ -43,6 +44,7 @@ namespace DroneSimulator.Console
             builder.RegisterGeneric(typeof(Logger<>)).As(typeof(ILogger<>)).SingleInstance();
             builder.RegisterInstance(dispatcherJobConfig);
             builder.RegisterInstance(droneConfig);
+            builder.RegisterInstance(reportConfig);            
             builder.RegisterType<CSVRespository<LocationDroneInTime>>()
                    .As<IRepository<LocationDroneInTime>>()
                    .OnActivated(async r => await r.Instance.Load(basePath, CSVFileType.LocationDrone))
